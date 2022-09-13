@@ -29,7 +29,7 @@ img{
   flex-direction: column;
   padding: 8px;
   border-radius: 10px;
-  width: 400px;
+  width: 380px;
 
 }
 .title{
@@ -65,7 +65,7 @@ input#tamanho-password{
   align-items: center;
   margin: 5px;
   padding: 3px;
-  width: 400px;
+  width: 380px;
   text-align: center;
 }
 .hide{
