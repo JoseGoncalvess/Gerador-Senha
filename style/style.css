@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Dosis:wght@300;400;500;700 & family= Roboto:wght@100;300;400;500;700; 900 & display=trocar');
+
+*{
+  font-family: 'Roboto', 'Dosis', sans-serif, system-ui;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(32, 31, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+img{
+
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+#container-password{
+  background-color: rgba(38, 38, 38, 0.246);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 10px;
+  width: 400px;
+
+}
+.title{
+  font-weight: bold;
+  color: white;
+}
+#valor{
+  font-weight: 600;
+  color: rgb(129, 34, 218);
+}
+input#tamanho-password{
+ -webkit-appearance:none ;
+ width: 100%;
+ height: 20px;
+ margin: 5px;
+ outline: none;
+ border-radius: 5px;
+ background-color: aliceblue;
+}
+#Passwor-button{
+  background-color:rgb(129, 34, 218) ;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+#container-characters{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  padding: 3px;
+  width: 100%;
+}
+#tittle{
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+span.password{
+  background-color: darkgrey;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 1s;
+  cursor: pointer;
+}
+span.password:hover{
+  transform: scale(1.05);
+}
+
+.tooltip{
+  font-size: 18px;
+  color: white;
+  position: relative;
+  top: 20px;
+  background-color: rgba(122, 119, 119, 0.744);
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  visibility: hidden;
+  transition: all 0.5s , ease-in-out;
+  opacity: 0;
+}
+#container-characters:hover .tooltip{
+  visibility: visible;
+  bottom: 10px;
+  opacity: 1;
+  
+}
