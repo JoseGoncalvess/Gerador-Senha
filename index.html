@@ -11,7 +11,7 @@
   <body>
     <img src="./assets/img/logo.png" alt="Logo gerador de senha" />
     <main id="container-password">
-      <p class="title">Senha com <span id="valor">20</span> Caracteres</p>
+      <p class="title">Senha com <span id="valor">0</span> Caracteres</p>
       <input
         type="range"
         name="tamanho"
@@ -19,13 +19,19 @@
         min="5"
         max="30"
       />
-      <button id="Passwor-button" onclick="passwor()">Gerar Senha</button>
-
-      <div id="container-characters">
-        <span id="tittle">A sua senha Gerado Foi:</span>
-        <span class="password" id="password">211212121212</span>
-        <span class="tooltip">Clique na Senha para Copiar</span>
-      </div>
+      <button id="passwor-button" onclick="generatPasssword()">
+        Gerar Senha
+      </button>
     </main>
+    <div
+      onclick="clipPassword()"
+      id="container-characters"
+      class="container-characters hide"
+    >
+      <span id="tittle">A sua senha Gerado Foi:</span>
+      <span class="password" id="password"></span>
+      <span class="tooltip">Clique na Senha para Copiar</span>
+    </div>
+    <script src="./assets/script.js"></script>
   </body>
 </html>

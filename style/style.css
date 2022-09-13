@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2? family= Dosis:wght@300;400;500;700 & family= Roboto:wght@100;300;400;500;700; 900 & display=trocar');
 
 *{
-  font-family: 'Roboto', 'Dosis', sans-serif, system-ui;
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,7 +15,6 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
 }
 
 img{
@@ -51,7 +49,7 @@ input#tamanho-password{
  border-radius: 5px;
  background-color: aliceblue;
 }
-#Passwor-button{
+#passwor-button{
   background-color:rgb(129, 34, 218) ;
   height: 40px;
   width: 100%;
@@ -60,18 +58,20 @@ input#tamanho-password{
   margin-bottom: 5px;
   color: white;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
 }
 #container-characters{
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   margin: 5px;
   padding: 3px;
-  width: 100%;
+  width: 400px;
+  text-align: center;
 }
+.hide{
+  display: none;
+}
+
 #tittle{
   color: white;
   font-size: 18px;
@@ -93,7 +93,6 @@ span.password{
 span.password:hover{
   transform: scale(1.05);
 }
-
 .tooltip{
   font-size: 18px;
   color: white;
@@ -106,12 +105,13 @@ span.password:hover{
   padding: 5px;
   border-radius: 5px;
   visibility: hidden;
-  transition: all 0.5s , ease-in-out;
+  transition: all 0.8s , ease-in-out;
   opacity: 0;
 }
 #container-characters:hover .tooltip{
   visibility: visible;
   bottom: 10px;
   opacity: 1;
+  transition: all 0.5s ease-in-out;
   
 }
